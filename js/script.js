@@ -1,73 +1,181 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const menuButton =
-    document.querySelector(".mobile-menu-button");
+  /* =========================================
+     MOBILE NAVIGATION
+  ========================================== */
 
-  const navigation =
-    document.querySelector(".main-nav");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mainNav = document.querySelector(".main-nav");
 
+  if (menuToggle && mainNav) {
 
-  if (menuButton && navigation) {
+    menuToggle.addEventListener("click", function () {
 
-    menuButton.addEventListener("click", function () {
+      const isOpen = mainNav.classList.toggle("nav-open");
 
-      const isOpen =
-        navigation.classList.toggle("open");
-
-      menuButton.setAttribute(
+      menuToggle.setAttribute(
         "aria-expanded",
         isOpen ? "true" : "false"
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
       );
 
     });
 
 
-    navigation
-      .querySelectorAll("a")
-      .forEach(function (link) {
+    /* Close mobile menu after clicking a link */
 
-        link.addEventListener("click", function () {
+    const navLinks = mainNav.querySelectorAll("a");
 
-          navigation.classList.remove("open");
+    navLinks.forEach(function (link) {
 
-          menuButton.setAttribute(
-            "aria-expanded",
-            "false"
-          );
+      link.addEventListener("click", function () {
 
-        });
+        mainNav.classList.remove("nav-open");
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation"
+        );
 
       });
 
+    });
+
   }
 
 
-  /*
-   * Static contact form
-   *
-   * GitHub Pages does not provide server-side form processing.
-   * The form will be connected to a form service later.
-   */
+  /* =========================================
+     CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+  ========================================== */
 
-  const contactForm =
-    document.querySelector("#contact-form");
+  document.addEventListener("click", function (event) {
+
+    if (!menuToggle || !mainNav) {
+      return;
+    }
+
+    const clickedInsideNavigation =
+      mainNav.contains(event.target);
+
+    const clickedMenuButton =
+      menuToggle.contains(event.target);
+
+    if (
+      !clickedInsideNavigation &&
+      !clickedMenuButton
+    ) {
+
+      mainNav.classList.remove("nav-open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+      menuToggle.setAttribute(
+        "aria-label",
+        "Open navigation"
+      );
+    }
+
+  });
 
 
-  if (contactForm) {
+  /* =========================================
+     SMOOTH SCROLL FOR INTERNAL LINKS
+  ========================================== */
 
-    contactForm.addEventListener(
-      "submit",
-      function (event) {
+  const internalLinks =
+    document.querySelectorAll('a[href^="#"]');
+
+  internalLinks.forEach(function (link) {
+
+    link.addEventListener("click", function (event) {
+
+      const targetId =
+        link.getAttribute("href");
+
+      if (
+        !targetId ||
+        targetId === "#"
+      ) {
+        return;
+      }
+
+      const target =
+        document.querySelector(targetId);
+
+      if (target) {
 
         event.preventDefault();
 
-        alert(
-          "Online enquiry submission will be enabled soon. Please contact ThinkAgentic directly for now."
-        );
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
 
       }
+
+    });
+
+  });
+
+
+  /* =========================================
+     HEADER SCROLL EFFECT
+  ========================================== */
+
+  const header =
+    document.querySelector(".site-header");
+
+  if (header) {
+
+    function updateHeader() {
+
+      if (window.scrollY > 20) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+
+    }
+
+    updateHeader();
+
+    window.addEventListener(
+      "scroll",
+      updateHeader,
+      { passive: true }
     );
 
   }
+
+
+  /* =========================================
+     CURRENT YEAR
+     
+     Allows the footer year to be updated
+     automatically if an element uses:
+     data-current-year
+  ========================================== */
+
+  const yearElements =
+    document.querySelectorAll("[data-current-year]");
+
+  yearElements.forEach(function (element) {
+
+    element.textContent =
+      new Date().getFullYear();
+
+  });
 
 });
