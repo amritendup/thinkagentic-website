@@ -1,134 +1,153 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>AI Services | ThinkAgentic</title>
+  <meta
+    content="ThinkAgentic provides practical AI consulting, agentic AI architecture, private and local AI exploration, and AI training and mentoring."
+    name="description" />
+  <meta
+    content="AI Consulting, Agentic AI, Generative AI, AI Architecture, RAG, Private AI, Local AI, AI Training, AI Mentoring"
+    name="keywords" />
+  <meta content="ThinkAgentic" name="author" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="images/thinkagentic-icon.png" rel="icon" type="image/png" />
 
-  <meta name="description"
-    content="ThinkAgentic provides practical AI consulting, agentic AI architecture, private and local AI exploration, and AI training and mentoring.">
+  <style>
+    /* Modern service section labels: the complete label stays inside one visual box. */
+    .service-number {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      max-width: 100%;
+      margin-bottom: 22px;
+      padding: 9px 16px 9px 10px;
+      border: 1px solid rgba(18, 103, 214, 0.16);
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(235, 246, 255, 0.98), rgba(247, 251, 255, 0.98));
+      box-shadow: 0 7px 22px rgba(20, 91, 170, 0.08);
+      color: #1267d6;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
 
-  <meta name="keywords"
-    content="AI Consulting, Agentic AI, Generative AI, AI Architecture, RAG, Private AI, Local AI, AI Training, AI Mentoring">
+    .service-number .service-index {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      height: 30px;
+      padding: 0 9px;
+      border-radius: 9px;
+      background: #1267d6;
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
 
-  <meta name="author" content="ThinkAgentic">
+    .service-number .service-title {
+      display: block;
+      white-space: nowrap;
+    }
 
-  <link rel="stylesheet" href="css/style.css">
+    .section-alt .service-number {
+      background: linear-gradient(135deg, rgba(230, 244, 255, 0.98), rgba(245, 250, 255, 0.98));
+    }
 
+    @media (max-width: 640px) {
+      .service-number {
+        gap: 9px;
+        padding: 8px 12px 8px 8px;
+        border-radius: 12px;
+        font-size: 0.72rem;
+        letter-spacing: 0.06em;
+      }
+
+      .service-number .service-index {
+        min-width: 34px;
+        height: 28px;
+        padding: 0 7px;
+        border-radius: 8px;
+      }
+
+      .service-number .service-title {
+        white-space: normal;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
-
-
   <!-- =====================================================
      HEADER
 ===================================================== -->
-
   <header class="site-header">
-
     <div class="container header-inner">
-
-      <a href="index.html" class="brand">
-        ThinkAgentic
-      </a>
-
-
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <a class="brand" href="index.html"><img alt="ThinkAgentic" src="images/thinkagentic-brand.png" /></a>
+      <button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
         ☰
       </button>
-
-
       <nav class="main-nav" id="main-nav">
-
         <a href="index.html">
           Home
         </a>
-
-        <a href="services.html" class="active">
+        <a class="active" href="services.html">
           Services
         </a>
-
         <a href="education.html">
           AI Education
         </a>
-
         <a href="about.html">
           About
         </a>
-
         <a href="contact.html">
           Contact
         </a>
-
       </nav>
-
     </div>
-
   </header>
-
-
-
   <main>
-
-
     <!-- =====================================================
      PAGE HERO
 ===================================================== -->
-
     <section class="page-hero">
-
       <div class="container">
-
         <div class="section-label">
           SERVICES
         </div>
-
-
         <h1>
           Practical AI solutions for
           real-world problems.
         </h1>
-
-
         <p>
           ThinkAgentic helps organizations and professionals
           understand, design and explore practical applications
           of modern AI — from Generative AI and RAG to agentic
           systems and private AI architectures.
         </p>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      AI CONSULTING
 ===================================================== -->
-
     <section class="service-section" id="ai-consulting">
-
       <div class="container">
-
-
         <div class="service-header">
-
-          <span class="service-number">
-            01 / AI CONSULTING
-          </span>
-
-
+          <div class="service-number" aria-label="Service 01: AI Consulting">
+            <span class="service-index">01</span>
+            <span class="service-title">AI Consulting</span>
+          </div>
           <h2>
             From AI ideas to practical architecture.
           </h2>
-
-
           <p>
             Organizations often know that AI can create value,
             but the difficult part is identifying the right
@@ -136,813 +155,501 @@
             understanding how AI should fit into existing
             technology and business processes.
           </p>
-
         </div>
-
-
-
         <div class="service-content-grid">
-
-
           <article class="service-item">
-
             <h3>
               AI Strategy &amp; Use-Case Exploration
             </h3>
-
             <p>
               Explore where AI can provide meaningful value,
               evaluate potential use cases and identify
               practical starting points.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Generative AI Architecture
             </h3>
-
             <p>
               Design solution architectures involving LLMs,
               enterprise applications, APIs, data sources,
               retrieval and AI workflows.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Enterprise RAG
             </h3>
-
             <p>
               Explore retrieval-augmented generation approaches
               for organizational knowledge, documents and
               domain-specific information.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               AI Integration
             </h3>
-
             <p>
               Consider how AI capabilities can integrate with
               existing applications, APIs, workflows and
               enterprise systems.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               AI Governance
             </h3>
-
             <p>
               Consider responsible AI practices including
               access control, data handling, human oversight,
               guardrails and auditability.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               AI Adoption Roadmaps
             </h3>
-
             <p>
               Translate an AI opportunity into a practical
               roadmap covering experimentation, architecture,
               implementation and adoption.
             </p>
-
           </article>
-
-
         </div>
-
-
         <div style="margin-top: 35px;">
-
-          <a href="contact.html" class="btn btn-primary">
+          <a class="btn btn-primary" href="contact.html">
             Discuss an AI Use Case
           </a>
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      AGENTIC AI
 ===================================================== -->
-
     <section class="service-section section-alt" id="agentic-ai">
-
       <div class="container">
-
-
         <div class="service-header">
-
-          <span class="service-number">
-            02 / AGENTIC AI
-          </span>
-
-
+          <div class="service-number" aria-label="Service 02: Agentic AI">
+            <span class="service-index">02</span>
+            <span class="service-title">Agentic AI</span>
+          </div>
           <h2>
             Moving from AI that answers
             to AI that can act.
           </h2>
-
-
           <p>
             Agentic AI systems can combine language models with
             tools, knowledge sources, workflows and other
             components to perform multi-step tasks toward
             defined objectives.
           </p>
-
         </div>
-
-
-
         <div class="service-content-grid">
-
-
           <article class="service-item">
-
             <h3>
               AI Agents
             </h3>
-
             <p>
               Explore systems where an AI model can reason
               about a task, select appropriate actions and
               interact with defined tools.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Tool Use
             </h3>
-
             <p>
               Design controlled interactions between AI
               systems and APIs, databases, applications or
               other tools.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Agent Orchestration
             </h3>
-
             <p>
               Explore how multiple steps, tools and AI
               components can be coordinated within a
               controlled workflow.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Multi-Agent Architectures
             </h3>
-
             <p>
               Evaluate situations where specialized agents
               or AI components may be coordinated to handle
               different responsibilities.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               RAG-Enabled Agents
             </h3>
-
             <p>
               Combine retrieval and knowledge sources with
               agentic workflows where access to relevant
               information is required.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Workflow Automation
             </h3>
-
             <p>
               Explore AI-assisted workflows that can
               coordinate information gathering, analysis,
               decisions and defined actions.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Guardrails
             </h3>
-
             <p>
               Consider boundaries around tools, data,
               permissions, actions and model behaviour.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Human-in-the-Loop
             </h3>
-
             <p>
               Design workflows where human review or approval
               remains part of important decisions and actions.
             </p>
-
           </article>
-
-
         </div>
-
-
         <div style="margin-top: 35px;">
-
-          <a href="contact.html" class="btn btn-primary">
+          <a class="btn btn-primary" href="contact.html">
             Discuss an Agentic AI Idea
           </a>
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      PRIVATE & LOCAL AI
 ===================================================== -->
-
     <section class="service-section" id="private-ai">
-
       <div class="container">
-
-
         <div class="service-header">
-
-          <span class="service-number">
-            03 / PRIVATE &amp; LOCAL AI
-          </span>
-
-
+          <div class="service-number" aria-label="Service 03: Private and Local AI">
+            <span class="service-index">03</span>
+            <span class="service-title">Private &amp; Local AI</span>
+          </div>
           <h2>
             Your data. Your environment.
             Your AI.
           </h2>
-
-
           <p>
             Not every AI workload needs to run entirely on a
             public AI service. Private and local AI approaches
             can provide greater control over data, deployment,
             models and access depending on the requirements.
           </p>
-
-
           <div style="margin-top: 18px;">
-
             <span class="coming-soon">
               Exploration / Coming Soon
             </span>
-
           </div>
-
         </div>
-
-
-
         <div class="service-content-grid">
-
-
           <article class="service-item">
-
             <h3>
               Local LLMs
             </h3>
-
             <p>
               Explore the use of locally hosted language models
               for selected workloads and environments.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Private RAG
             </h3>
-
             <p>
               Explore retrieval systems where organizational
               knowledge can remain within a controlled
               environment.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               On-Premise AI
             </h3>
-
             <p>
               Consider AI architectures designed for
               infrastructure where data or workload
               requirements call for on-premise deployment.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Hybrid AI
             </h3>
-
             <p>
               Evaluate architectures that combine private
               infrastructure with selected cloud AI services.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Model Routing
             </h3>
-
             <p>
               Explore approaches where different models can
               be selected based on workload, cost,
               performance or privacy requirements.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Access Control
             </h3>
-
             <p>
               Consider authentication, authorization and
               controlled access to AI capabilities and
               organizational data.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Guardrails
             </h3>
-
             <p>
               Explore controls around data, prompts, tools,
               model usage and AI-generated actions.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Auditability
             </h3>
-
             <p>
               Consider logging and traceability requirements
               for AI interactions, workflows and actions.
             </p>
-
           </article>
-
-
         </div>
-
-
-
         <div style="margin-top: 35px;">
-
-          <a href="contact.html" class="btn btn-secondary">
+          <a class="btn btn-secondary" href="contact.html">
             Discuss Private AI
           </a>
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      AI TRAINING & MENTORING
 ===================================================== -->
-
     <section class="service-section section-alt" id="ai-training">
-
       <div class="container">
-
-
         <div class="service-header">
-
-          <span class="service-number">
-            04 / AI TEACHING &amp; MENTORING
-          </span>
-
-
+          <div class="service-number" aria-label="Service 04: AI Teaching and Mentoring">
+            <span class="service-index">04</span>
+            <span class="service-title">AI Teaching &amp; Mentoring</span>
+          </div>
           <h2>
             Learn AI by understanding
             how it actually works.
           </h2>
-
-
           <p>
             AI learning should go beyond memorizing terminology.
             ThinkAgentic focuses on practical understanding through
             concepts, examples, guided exercises, experimentation
             and projects.
           </p>
-
         </div>
-
-
-
         <div class="service-content-grid">
-
-
           <article class="service-item">
-
             <h3>
               AI Fundamentals
             </h3>
-
             <p>
               Build a clear foundation in artificial
               intelligence, machine learning and modern
               Generative AI.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Generative AI
             </h3>
-
             <p>
               Understand LLMs, prompts, context, embeddings,
               retrieval and practical Generative AI
               applications.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Prompt Engineering
             </h3>
-
             <p>
               Learn how to structure instructions, context,
               examples and constraints for more useful
               interactions with AI systems.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               RAG &amp; Knowledge Systems
             </h3>
-
             <p>
               Understand how retrieval can connect language
               models with external or domain-specific
               information.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               Agentic AI
             </h3>
-
             <p>
               Learn the concepts behind AI agents, tool use,
               orchestration, workflows and human oversight.
             </p>
-
           </article>
-
-
           <article class="service-item">
-
             <h3>
               AI Projects
             </h3>
-
             <p>
               Learn through practical projects that connect
               concepts with real implementation scenarios.
             </p>
-
           </article>
-
-
         </div>
-
-
         <div style="margin-top: 35px;">
-
-          <a href="education.html" class="btn btn-primary">
+          <a class="btn btn-primary" href="education.html">
             Explore AI Education
           </a>
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      HOW WE WORK
 ===================================================== -->
-
     <section class="section">
-
       <div class="container">
-
         <div class="section-label">
           HOW WE WORK
         </div>
-
-
         <h2>
           Start small. Learn. Validate. Scale.
         </h2>
-
-
         <p class="section-intro">
           AI initiatives do not always need to begin with a large
           implementation. A focused exploration or prototype can
           help clarify the problem, technology and potential value
           before larger investment.
         </p>
-
-
-
         <div class="three-column-grid">
-
-
           <article class="simple-card">
-
             <span class="simple-card-number">
               01
             </span>
-
             <h3>
               Explore
             </h3>
-
             <p>
               Understand the problem, identify possible AI
               applications and examine the relevant
               technologies.
             </p>
-
           </article>
-
-
           <article class="simple-card">
-
             <span class="simple-card-number">
               02
             </span>
-
             <h3>
               Prototype
             </h3>
-
             <p>
               Build a focused proof of concept to test the
               architecture, workflow and AI behaviour.
             </p>
-
           </article>
-
-
           <article class="simple-card">
-
             <span class="simple-card-number">
               03
             </span>
-
             <h3>
               Evolve
             </h3>
-
             <p>
               Use the learning from experimentation to define
               the next implementation or adoption step.
             </p>
-
           </article>
-
-
         </div>
-
       </div>
-
     </section>
-
-
-
     <!-- =====================================================
      CTA
 ===================================================== -->
-
     <section class="section section-cta">
-
       <div class="container narrow center">
-
         <div class="section-label">
           HAVE AN AI IDEA?
         </div>
-
-
         <h2>
           Let's explore it together.
         </h2>
-
-
         <p>
           Tell us what you are trying to achieve, what problem
           you are exploring, or what you want to learn.
         </p>
-
-
-        <a href="contact.html" class="btn btn-primary">
+        <a class="btn btn-primary" href="contact.html">
           Start a Conversation
         </a>
-
       </div>
-
     </section>
-
-
   </main>
-
-
-
   <!-- =====================================================
      FOOTER
 ===================================================== -->
-
   <footer class="site-footer">
-
     <div class="container footer-inner">
-
-
       <div class="footer-brand">
-
-        <a href="index.html" class="brand">
-          ThinkAgentic
-        </a>
-
-
+        <a class="brand" href="index.html"><img alt="ThinkAgentic" src="images/thinkagentic-brand.png" /></a>
         <p>
           Think Smarter. Build with AI.
         </p>
-
-
         <p class="footer-description">
           AI Consulting · Agentic AI · Private AI · AI Education
         </p>
-
       </div>
-
-
-
       <div class="footer-links">
-
         <a href="index.html">
           Home
         </a>
-
         <a href="services.html">
           Services
         </a>
-
         <a href="education.html">
           AI Education
         </a>
-
         <a href="about.html">
           About
         </a>
-
         <a href="contact.html">
           Contact
         </a>
-
       </div>
-
     </div>
-
-
-
     <div class="container footer-bottom">
-
       <p>
         © 2026 ThinkAgentic. All rights reserved.
       </p>
-
     </div>
-
   </footer>
-
-
-
   <script src="js/script.js"></script>
-
 </body>
 
 </html>

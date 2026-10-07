@@ -4,9 +4,7 @@ Official website for **ThinkAgentic**.
 
 **Tagline:** Think Smarter. Build with AI.
 
-ThinkAgentic focuses on practical AI consulting, Agentic AI solutions, Private & Local AI, and AI education.
-
----
+ThinkAgentic focuses on practical AI consulting, Agentic AI solutions, Private & Local AI, AI education and mentoring.
 
 ## Website
 
@@ -14,37 +12,16 @@ Production website:
 
 https://thinkagentic.in
 
----
-
-## About ThinkAgentic
-
-ThinkAgentic is an AI consulting, education and technology initiative focused on helping businesses, technology professionals and learners understand and apply modern AI.
-
-The website currently presents four primary areas:
-
-- AI Consulting
-- Agentic AI Solutions
-- Private & Local AI
-- AI Teaching & Mentoring
-
-Future initiatives may include practical AI products and private/local AI solutions.
-
----
-
 ## Technology Stack
 
-The website is intentionally lightweight and uses:
+The site is intentionally lightweight and GitHub Pages friendly:
 
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- GitHub
-- GitHub Pages
+- GitHub / GitHub Pages
 - GoDaddy DNS
-
-There is currently no application backend or database.
-
----
+- No application backend or database
 
 ## Repository Structure
 
@@ -57,9 +34,6 @@ thinkagentic-website/
 ├── about.html
 ├── contact.html
 │
-├── robots.txt
-├── sitemap.xml
-│
 ├── css/
 │   └── style.css
 │
@@ -67,5 +41,33 @@ thinkagentic-website/
 │   └── script.js
 │
 ├── images/
+│   ├── thinkagentic-brand.png
+│   ├── thinkagentic-emblem.png
+│   ├── thinkagentic-icon.png
+│   └── thinkagentic-logo-original.jpeg
 │
+├── favicon.svg
+├── CNAME
+├── robots.txt
+├── sitemap.xml
 └── README.md
+```
+
+## Design update
+
+The current design uses a clean, modern light theme with:
+
+- ThinkAgentic logo lockup in the global header and footer
+- Responsive navigation and mobile menu
+- Gradient blue/cyan visual language aligned with the supplied logo
+- Modern hero treatment with the ThinkAgentic emblem
+- Consistent service / education cards
+- Improved spacing, typography, hierarchy and CTA styling
+- Responsive layouts for desktop, tablet and mobile
+- Reduced visual clutter in education and service sections
+- Lightweight CSS/JS with no UI framework dependency
+
+## Logo assets
+
+The supplied ThinkAgentic logo is retained as `images/thinkagentic-logo-original.jpeg`.
+The website uses transparent/cropped derivatives for better placement in the header, hero and favicon while preserving the original artwork.
