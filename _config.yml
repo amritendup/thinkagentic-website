@@ -1,0 +1,12 @@
+title: ThinkAgentic
+url: "https://thinkagentic.in"
+baseurl: ""
+timezone: Asia/Kolkata
+permalink: /articles/:title/
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - SEO-DEPLOYMENT-GUIDE.md
+  - IMPLEMENTATION-NOTES.md
