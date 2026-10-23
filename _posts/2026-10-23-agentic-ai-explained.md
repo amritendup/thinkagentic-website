@@ -3,6 +3,8 @@ layout: article
 title: "What Is Agentic AI? A Practical Introduction"
 description: "Learn how goal-directed AI systems use tools, decisions and feedback to complete multi-step tasks."
 category: "Agentic AI"
+date: 2026-10-23
+last_modified: 2026-10-23
 ---
 
 Agentic AI refers to systems that can work toward a goal through multiple steps, often combining language models with tools, workflow logic and feedback.

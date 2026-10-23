@@ -3,6 +3,8 @@ layout: article
 title: "What Is Artificial Intelligence? A Student-Friendly Introduction"
 description: "Understand AI through familiar examples and learn why responsible use matters."
 category: "AI Fundamentals"
+date: 2026-10-23
+last_modified: 2026-10-23
 ---
 
 Artificial intelligence (AI) describes computer systems designed to perform tasks that often require human intelligence, such as recognising patterns, working with language and making predictions.

@@ -1611,7 +1611,7 @@ ul {
   }
 }
 
-\n\n
+
 
 /* =========================================================
    THINKAGENTIC — PREMIUM DARK / LIGHT REFRESH 2026
@@ -2280,5 +2280,99 @@ ul {
 
   .article-hero {
     padding: 65px 0 45px
+  }
+}
+
+/* V2.1: consistent education presentation */
+.education-hero-v21 {
+  background: linear-gradient(125deg, #edf6fd, #f9fcff);
+  padding: 92px 0 75px
+}
+
+.education-hero-v21 .container {
+  max-width: 1200px
+}
+
+.education-eyebrow {
+  color: #078dab;
+  font-size: .9rem;
+  letter-spacing: .14em;
+  font-weight: 800;
+  margin: 0 0 18px
+}
+
+.education-hero-v21 h1 {
+  font-size: clamp(2.3rem, 5vw, 4.1rem);
+  line-height: 1.15;
+  max-width: 950px;
+  margin: 0 0 25px;
+  color: #0c2441
+}
+
+.education-lead {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4d637d;
+  max-width: 900px;
+  margin: 0 0 30px
+}
+
+.education-hero-v21 .hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap
+}
+
+.education-pathways {
+  padding-top: 72px;
+  padding-bottom: 65px
+}
+
+.education-pathways h2 {
+  margin: 12px 0 28px
+}
+
+.education-path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px
+}
+
+.education-path-card {
+  background: #fff;
+  border: 1px solid #dbe8f3;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 12px 34px rgba(7, 42, 82, .055)
+}
+
+.education-path-tag {
+  display: inline-block;
+  color: #087f94;
+  font-weight: 800;
+  font-size: .78rem;
+  letter-spacing: .07em;
+  margin-bottom: 18px
+}
+
+.education-path-card h3 {
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+  color: #0d2b4c
+}
+
+.education-path-card p {
+  line-height: 1.75;
+  margin: 0;
+  color: #526781
+}
+
+@media(max-width:850px) {
+  .education-path-grid {
+    grid-template-columns: 1fr
+  }
+
+  .education-hero-v21 {
+    padding: 65px 0 55px
   }
 }

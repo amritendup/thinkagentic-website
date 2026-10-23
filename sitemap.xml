@@ -1,2 +1,12 @@
-<?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://thinkagentic.in/</loc></url><url><loc>https://thinkagentic.in/services.html</loc></url><url><loc>https://thinkagentic.in/education.html</loc></url><url><loc>https://thinkagentic.in/about.html</loc></url><url><loc>https://thinkagentic.in/contact.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://thinkagentic.in/</loc></url>
+  <url><loc>https://thinkagentic.in/about.html</loc></url>
+  <url><loc>https://thinkagentic.in/contact.html</loc></url>
+  <url><loc>https://thinkagentic.in/education.html</loc></url>
+  <url><loc>https://thinkagentic.in/services.html</loc></url>
+  <url><loc>https://thinkagentic.in/articles.html</loc></url>
+  <url><loc>https://thinkagentic.in/articles/what-is-artificial-intelligence.html</loc></url>
+  <url><loc>https://thinkagentic.in/articles/cbse-class-10-ai-study-guide.html</loc></url>
+  <url><loc>https://thinkagentic.in/articles/agentic-ai-explained.html</loc></url>
+</urlset>

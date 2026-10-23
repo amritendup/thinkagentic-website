@@ -3,6 +3,8 @@ layout: article
 title: "CBSE Class 10 Artificial Intelligence: How to Plan Your Preparation"
 description: "A practical framework for organising AI theory, activities and revision before the board examination."
 category: "Board AI"
+date: 2026-10-23
+last_modified: 2026-10-23
 ---
 
 Artificial Intelligence is a school subject that rewards both conceptual understanding and practical application. A good preparation plan should cover the **official curriculum for your examination year**, not just a collection of sample questions.
